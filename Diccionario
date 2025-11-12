@@ -1,0 +1,30 @@
+# 1. Creación del diccionario original
+dispositivo_red = {
+    'IP': '192.168.1.10',
+    'Hostname': 'Firewall-Corp',
+    'Estado': 'Activo'
+}
+print(f"Diccionario original: {dispositivo_red}\n")
+
+# --- Apartado (a) ---
+print("--- a) Muestra el valor de 'Hostname' ---")
+# Se accede al valor usando la clave entre corchetes []
+valor_hostname = dispositivo_red['Hostname']
+print(f"El hostname es: {valor_hostname}")
+
+# --- Apartado (b) ---
+print("\n--- b) Agrega la clave 'Ubicación' ---")
+# Se añade un nuevo par clave-valor
+dispositivo_red['Ubicación'] = 'Centro de Datos'
+print(f"Diccionario después de agregar ubicación: {dispositivo_red}")
+
+# --- Apartado (c) ---
+print("\n--- c) Cambia el valor de 'Estado' a 'Inactivo' ---")
+# Se actualiza el valor de una clave existente
+dispositivo_red['Estado'] = 'Inactivo'
+print(f"Diccionario después de cambiar estado: {dispositivo_red}")
+
+# --- Apartado (d) ---
+print("\n--- d) Muestra todo el diccionario actualizado ---")
+print("Diccionario final:")
+print(dispositivo_red)
