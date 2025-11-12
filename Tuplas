@@ -1,0 +1,32 @@
+# Ejercicios-Tuplas-Listas-y-Diccionario
+# 1. Creación de la tupla
+vulnerabilidades = ('SQL Injection', 'Cross-Site Scripting', 'Buffer Overflow', 'Denegación de Servicio')
+
+print(f"Tupla original: {vulnerabilidades}\n")
+
+# --- Apartado (a) ---
+print("--- a) Muestra el segundo elemento ---")
+# Python empieza a contar desde el índice 0,
+# por lo que el segundo elemento está en el índice 1.
+segundo_elemento = vulnerabilidades[1]
+print(segundo_elemento)
+
+
+# --- Apartado (b) ---
+print("\n--- b) Muestra los dos últimos elementos ---")
+# Usamos "slicing" (rebanado) con índices negativos.
+# [-2:] significa "empezar desde el segundo elemento desde el final hasta el final".
+ultimos_dos = vulnerabilidades[-2:]
+print(ultimos_dos)
+
+
+# --- Apartado (c) ---
+print("\n--- c) Intenta modificar un elemento ---")
+# Las tuplas son INMUTABLES. Esto significa que no se pueden cambiar
+# después de crearse. Este código generará un error.
+try:
+    vulnerabilidades[0] = 'XSS'
+except TypeError as e:
+    print(f"Se produjo un error esperado: {e}")
+    print("\nExplicación: El error TypeError confirma que las tuplas no se pueden modificar.")
+    print("Si necesitaras modificar datos, deberías usar una lista (con []).")
