@@ -1,0 +1,22 @@
+# 1. Creación de la lista original
+puertos_abiertos = [22, 80, 443, 8080]
+print(f"Lista original: {puertos_abiertos}\n")
+
+# --- Apartado (a) ---
+print("--- a) Agrega el puerto 21 ---")
+# Usamos el método .append() para añadir un elemento al final
+puertos_abiertos.append(21)
+print(f"Lista después de agregar 21: {puertos_abiertos}")
+
+# --- Apartado (b) ---
+print("\n--- b) Elimina el puerto 8080 ---")
+# Usamos el método .remove() para quitar un elemento por su valor
+puertos_abiertos.remove(8080)
+print(f"Lista después de eliminar 8080: {puertos_abiertos}")
+
+# --- Apartado (c) ---
+print("\n--- c) Muestra la lista ordenada ---")
+# Usamos el método .sort() para ordenar la lista en su lugar,
+# de menor a mayor.
+puertos_abiertos.sort()
+print(f"Lista ordenada: {puertos_abiertos}")
