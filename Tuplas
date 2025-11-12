@@ -1,3 +1,10 @@
+Crea una tupla llamada 'vulnerabilidades' que contenga los siguientes elementos: 'SQL 
+Injection', 'Cross-Site Scripting', 'Buffer Overflow', 'Denegación de Servicio'. 
+a) Muestra el segundo elemento de la tupla. 
+b) Muestra los dos últimos elementos. 
+c) Intenta modificar un elemento y observa el resultado.
+
+Codigo__
 # Ejercicios-Tuplas-Listas-y-Diccionario
 # 1. Creación de la tupla
 vulnerabilidades = ('SQL Injection', 'Cross-Site Scripting', 'Buffer Overflow', 'Denegación de Servicio')
